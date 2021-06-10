@@ -10,7 +10,7 @@ export function useStateContext() {
 export function EMProvider({ children }) {
   const [modalOpen, setModalOpen] = useState(false);
   const openModalAction = () => {
-    Cookies.set("modalOpenedBefore", true, { expires: 7 });
+    Cookies.set("modalOpenedBefore", "true", { expires: 7 });
     setModalOpen(true);
   };
   const closeModalAction = () => {
@@ -38,9 +38,12 @@ export function EMProvider({ children }) {
   const [formCompleted, setFormCompleted] = useState(false);
 
   const submittedForm = (e) => {
-    e.preventdefault(e);
+    e.preventDefault();
     if (showEmailError === false && email.length > 5) {
       setFormCompleted(true);
+      setTimeout(() => {
+        closeModalAction();
+      }, 3000);
     }
   };
 

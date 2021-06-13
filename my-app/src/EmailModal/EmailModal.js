@@ -26,16 +26,18 @@ const EmailModal = () => {
       <div className="email-modal__container">
         <form className="email-modal__info" onSubmit={newState.submittedForm}>
           <div className="logo">
-            Berry
-            <div className="logo__sub">by Jenny</div>
+            Wicked
+            <div className="logo__sub">Awesome Shoes</div>
           </div>
           <h2>Don't miss this chance!</h2>
           <p className="email-modal__message">
-            Join our amazing community of more than{" "}
-            <span className="email-modal__highlight-text">300,000 woman</span>{" "}
-            who love fashion and receive{" "}
+            Join our community of more than{" "}
             <span className="email-modal__highlight-text">
-              notifications, discounts, and our award winning newsletter.
+              300,000 men and women
+            </span>{" "}
+            who love looking their best and receive{" "}
+            <span className="email-modal__highlight-text">
+              notifications on upcoming sales and promotions!
             </span>
           </p>
           <div
@@ -69,7 +71,7 @@ const EmailModal = () => {
           </div>
         </form>
         <div className="email-modal__side-img">
-          <img src="img/pexels-photo-4462782.jpeg" />
+          <img src="img/boots.jpg" />
         </div>
         <div
           className={`email-thank ${

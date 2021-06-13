@@ -8,11 +8,21 @@ const App = () => {
       <>
         <header className="page-header">
           <div className="logo">
-            Berry
-            <div className="logo__sub">by Jenny</div>
+            Wicked
+            <div className="logo__sub">Awesome Shoes</div>
           </div>
         </header>
-        <main className="content-area">
+        <main
+          className="content-area"
+          style={{
+            backgroundImage: `url(${
+              process.env.PUBLIC_URL + "/img/dark_theme-gradient.png"
+            })`,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+          }}
+        >
           <h1>Content Area</h1>
         </main>
         <EmailModal />

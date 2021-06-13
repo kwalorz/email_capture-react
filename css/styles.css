@@ -10,8 +10,6 @@
   position: fixed;
 }
 .content-area {
-  background: #000 url(/img/dark_theme-gradient.png) no-repeat center
-    center/cover;
   z-index: -1;
   height: 100vh;
   overflow: hidden;
